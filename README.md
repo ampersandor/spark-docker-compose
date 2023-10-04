@@ -2,8 +2,9 @@
 This repository provides Dockerfile and docker-compose.yml file that helps you construct a mock spark cluster with standalone manager. Not only can you experience the client mode with jupyter-lab environment, furthermore you can submit your spark programming through cluster mode to spark://localhost:7077
 
 ## Features
-It provides jars folder containing aws redshift drivers for your convinence.
-https://docs.aws.amazon.com/ko_kr/redshift/latest/mgmt/jdbc20-download-driver.html
+It provides jars folder containing aws redshift drivers for your convinence.  
+https://docs.aws.amazon.com/ko_kr/redshift/latest/mgmt/jdbc20-download-driver.html  
+  
 Happy test and examine your spark programming!
 
 ## Prerequisite
