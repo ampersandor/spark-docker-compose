@@ -1,0 +1,3 @@
+*.out
+spark-warehouse
+metastore_db
