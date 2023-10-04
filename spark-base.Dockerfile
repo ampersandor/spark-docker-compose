@@ -5,11 +5,9 @@ ARG hadoop_version  # will be passed through the command line in bash
 
 RUN apt-get update -y && \
     apt-get install -y curl wget && \
-    curl https://archive.apache.org/dist/spark/spark-${spark_version}/spark-${spark_version}-bin-hadoop${hadoop_version}.tgz -o spark.tgz && \
-    tar -xf spark.tgz && \
-    mv spark-${spark_version}-bin-hadoop${hadoop_version} /usr/bin/ && \
-    mkdir /usr/bin/spark-${spark_version}-bin-hadoop${hadoop_version}/logs && \
-    rm spark.tgz
+    mkdir -p /usr/bin/spark-${spark_version}-bin-hadoop${hadoop_version}/logs
+
+COPY spark /usr/bin/spark-${spark_version}-bin-hadoop${hadoop_version}
 
 COPY jars/* /usr/bin/spark-${spark_version}-bin-hadoop${hadoop_version}/jars/
 
