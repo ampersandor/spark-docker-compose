@@ -1,8 +1,14 @@
 # Spark with Docker-compose
-This repository provides Dockerfile and docker-compose.yml file that helps you construct a mock spark cluster with standalone manager. Not only could you experience the client mode with jupyter-lab environment, furthermore you can submit your spark programming through cluster mode to spark://localhost:7077
+This repository provides Dockerfile and docker-compose.yml file that helps you construct a mock spark cluster with standalone manager. Not only can you experience the client mode with jupyter-lab environment, furthermore you can submit your spark programming through cluster mode to spark://localhost:7077
 
 ## Features
 Happy test and examine your spark programming!
+
+## Prerequisite
+
+* **Docker Engine v24.02**
+* **Docker Compose v2.19.1**
+* **Mac OS** or **Linux**
 
 ## Installation
 ```bash
